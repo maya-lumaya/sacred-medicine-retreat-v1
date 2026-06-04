@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sacred Medicine Retreat · Remembering Who You Are</title>
+<meta name="description" content="A 2-night sacred medicine retreat on August 21–23, 2025 — 1 hour from Geneva, France. A journey of healing, presence, and deep remembering in nature.">
+<link rel="canonical" href="https://maya-lumaya.github.io/sacred-medicine-retreat-v1/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sacred Medicine Retreat · Remembering Who You Are">
+<meta property="og:description" content="A 2-night sacred medicine retreat on August 21–23, 2025 — 1 hour from Geneva, France. A journey of healing, presence, and deep remembering in nature.">
+<meta property="og:url" content="https://maya-lumaya.github.io/sacred-medicine-retreat-v1/">
+<meta property="og:image" content="https://maya-lumaya.github.io/sacred-medicine-retreat-v1/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sacred Medicine Retreat · Remembering Who You Are">
+<meta name="twitter:description" content="A 2-night sacred medicine retreat on August 21–23, 2025 — 1 hour from Geneva, France. A journey of healing, presence, and deep remembering in nature.">
+<meta name="twitter:image" content="https://maya-lumaya.github.io/sacred-medicine-retreat-v1/assets/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Lora:ital,wght@0,400..600;1,400..600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --parchment:#F1E6CE; --oat:#E6CDA9; --ink:#46402F; --cacao:#291602;
+  --walnut:#73604D; --green:#3A4A30; --ochre:#9D5F1B; --bloom:#C9A98B;
+  --ochre-text:#7E4A12; /* darker ochre for small label text on light bg — clears WCAG AA 4.5:1 */
+  --hair:rgba(115,96,77,.42);
+  --display:'Fraunces',serif; --body:'Lora',Georgia,serif; --label:'Cormorant Garamond',serif;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--body); color:var(--ink); background:var(--parchment);
+  font-size:18px; line-height:1.78; -webkit-font-smoothing:antialiased;
+  font-weight:400; overflow-x:hidden; position:relative;
+}
+/* ---- paper grain overlay ---- */
+.grain{position:fixed;inset:0;z-index:9000;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  mix-blend-mode:multiply;opacity:.5;}
+.coffee{position:fixed;z-index:1;pointer-events:none;border-radius:50%;
+  border:8px solid rgba(157,95,27,.07);opacity:.6;}
+.c1{width:260px;height:260px;top:14%;right:-90px}
+.c2{width:180px;height:180px;bottom:8%;left:-70px;border-color:rgba(58,74,48,.06)}
+
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;width:100%}
+h1,h2,h3{font-family:var(--display);color:var(--cacao);font-weight:400;line-height:1.04;letter-spacing:-.01em;font-optical-sizing:auto;font-variation-settings:"SOFT" 40,"WONK" 1;}
+.eyebrow{font-family:var(--label);text-transform:uppercase;letter-spacing:.34em;
+  font-size:.82rem;color:var(--ochre-text);font-weight:500;display:block;margin-bottom:1.1rem}
+.latin{font-family:var(--label);font-style:italic;letter-spacing:.16em;color:var(--walnut);
+  text-transform:none;font-size:1.02rem}
+.smallcaps{font-family:var(--label);text-transform:uppercase;letter-spacing:.26em;
+  font-size:.86rem;color:var(--walnut);font-weight:500;font-variant:small-caps}
+.lead{font-size:1.2rem;line-height:1.74;color:var(--ink);max-width:38ch}
+.marg{font-style:italic;color:var(--walnut);font-size:.96rem;line-height:1.6}
+
+/* ---- organic torn edges ----
+   NOTE: never mask a whole section (that clips the heading/lead). Instead frame the
+   dark "ceremony" sections with a thin torn-parchment deckle, top and bottom. */
+.torn-top{position:relative}
+.medicines,.testi{position:relative}
+.medicines::before,.testi::before,
+.medicines::after,.testi::after{
+  content:"";position:absolute;left:0;right:0;height:22px;pointer-events:none;z-index:4;
+  background:var(--parchment);
+  -webkit-mask-size:100% 100%;mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;}
+.medicines::before,.testi::before{top:-1px;
+  -webkit-mask-image:var(--torn-down);mask-image:var(--torn-down);
+  --torn-down:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='30' preserveAspectRatio='none'><path d='M0,0 L1200,0 L1200,16 Q1160,22 1120,16 T1040,17 T960,15 T880,18 T800,14 T720,18 T640,15 T560,18 T480,14 T400,17 T320,15 T240,18 T160,15 T80,18 T0,15 Z' fill='black'/></svg>");}
+.medicines::after,.testi::after{bottom:-1px;
+  -webkit-mask-image:var(--torn-up);mask-image:var(--torn-up);
+  --torn-up:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='30' preserveAspectRatio='none'><path d='M0,30 L1200,30 L1200,14 Q1160,8 1120,14 T1040,13 T960,15 T880,12 T800,16 T720,12 T640,15 T560,12 T480,16 T400,13 T320,15 T240,12 T160,15 T80,12 T0,15 Z' fill='black'/></svg>");}
+
+/* ---- buttons ---- */
+.btn{font-family:var(--label);text-transform:uppercase;letter-spacing:.2em;font-size:.92rem;
+  font-weight:500;padding:.92em 1.7em;display:inline-flex;align-items:center;gap:.55em;
+  border:1px solid var(--green);cursor:pointer;text-decoration:none;transition:.35s ease;
+  background:transparent;color:var(--green);border-radius:2px}
+.btn-fill{background:var(--green);color:var(--parchment);box-shadow:0 6px 18px rgba(41,22,2,.16)}
+.btn-fill:hover{background:var(--cacao);border-color:var(--cacao);transform:translateY(-2px)}
+.btn-ghost:hover{background:rgba(58,74,48,.08)}
+.btn-ochre{border-color:var(--ochre);color:var(--ochre)}
+.btn-ochre:hover{background:rgba(157,95,27,.09)}
+.linkmore{font-family:var(--label);text-transform:uppercase;letter-spacing:.18em;font-size:.84rem;
+  color:var(--green);font-weight:500;background:none;border:none;cursor:pointer;padding:.4em 0;
+  border-bottom:1px solid var(--green);display:inline-flex;align-items:center;gap:.4em;transition:.3s}
+.linkmore:hover{gap:.8em;color:var(--cacao);border-color:var(--cacao)}
+
+/* ---- NAV ---- */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:8000;transition:.45s ease;
+  border-bottom:1px solid transparent}
+header.nav.solid{background:rgba(241,230,206,.93);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--hair);box-shadow:0 4px 22px rgba(41,22,2,.06)}
+.navin{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:var(--maxw);margin:0 auto}
+.brand{font-family:var(--display);font-size:1.32rem;color:var(--cacao);text-decoration:none;
+  font-variation-settings:"SOFT" 60,"WONK" 1;display:flex;align-items:center;gap:.55em;letter-spacing:-.01em}
+.brand svg{width:26px;height:26px;flex:none}
+.navlinks{display:flex;align-items:center;gap:2rem;list-style:none}
+.navlinks a{font-family:var(--label);text-transform:uppercase;letter-spacing:.2em;font-size:.86rem;
+  text-decoration:none;color:var(--ink);font-weight:500;transition:.3s;position:relative}
+.navlinks a:not(.btn):hover{color:var(--green)}
+.navlinks a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-5px;height:1px;width:0;background:var(--green);transition:.3s}
+.navlinks a:not(.btn):hover::after{width:100%}
+.menu-scrim{display:none;position:fixed;inset:0;z-index:8400;background:rgba(41,22,2,.42);
+  opacity:0;transition:opacity .4s ease}
+.menu-scrim.open{display:block;opacity:1}
+.burger{display:none;background:none;border:none;cursor:pointer;width:34px;height:30px;position:relative}
+.burger span{position:absolute;left:3px;right:3px;height:1.5px;background:var(--cacao);transition:.3s}
+.burger span:nth-child(1){top:7px}.burger span:nth-child(2){top:14px}.burger span:nth-child(3){top:21px}
+
+/* ---- HERO ---- */
+.hero{padding:160px 0 90px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero-plate{position:relative;border:1px solid var(--hair);padding:48px 40px 40px;
+  background:linear-gradient(165deg,rgba(230,205,169,.32),rgba(241,230,206,.1));
+  box-shadow:inset 0 0 0 5px var(--parchment),inset 0 0 0 6px var(--hair)}
+.hero-plate .corner{position:absolute;top:14px;left:16px;font-family:var(--label);
+  font-style:italic;color:var(--walnut);letter-spacing:.1em;font-size:.9rem}
+.hero h1{font-size:clamp(3.1rem,7vw,5.4rem);margin:.2em 0 .55em;font-variation-settings:"SOFT" 60,"WONK" 1}
+.hero h1 em{font-style:italic;color:var(--green);font-variation-settings:"SOFT" 80,"WONK" 1}
+.dropcap::first-letter{font-family:var(--display);float:left;font-size:4.6rem;line-height:.72;
+  padding:.06em .12em 0 0;color:var(--green);font-weight:500;font-variation-settings:"SOFT" 30,"WONK" 1}
+.hero .meta{font-family:var(--label);letter-spacing:.16em;text-transform:uppercase;
+  font-size:.94rem;color:var(--walnut);margin:0 0 2rem;border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);padding:.8em 0}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.specimen-card{position:relative;border:1px solid var(--walnut);background:var(--oat);
+  padding:38px 34px 30px;box-shadow:6px 8px 0 rgba(201,169,139,.4),0 14px 34px rgba(41,22,2,.1)}
+.specimen-card::before{content:"";position:absolute;inset:7px;border:1px solid var(--hair);pointer-events:none}
+.specimen-card .num{position:absolute;top:14px;right:18px;font-family:var(--label);
+  font-style:italic;color:var(--walnut);font-size:1.05rem}
+.specimen-card h3{font-size:1.5rem;margin-bottom:.4em}
+.vine-margin{position:absolute;left:-26px;top:0;height:100%;width:60px;pointer-events:none;opacity:.85}
+@media(max-width:920px){.vine-margin{display:none}}
+
+/* ---- generic section ---- */
+section{padding:96px 0;position:relative}
+.section-head{max-width:46ch;margin-bottom:3rem}
+.section-head h2{font-size:clamp(2.2rem,4.4vw,3.4rem);margin-bottom:.5em}
+
+/* ---- ABOUT ---- */
+.about{background:linear-gradient(180deg,var(--parchment),rgba(230,205,169,.28))}
+.about-spread{display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:start}
+.about-body p{margin-bottom:1.2em}
+.about-body .dropcap::first-letter{font-size:5.2rem}
+.about-aside{border-left:2px solid var(--hair);padding-left:26px}
+.included{list-style:none;margin-top:1.2rem}
+.included li{display:flex;gap:.9em;align-items:flex-start;padding:.62em 0;border-bottom:1px dotted var(--hair);
+  font-family:var(--body);font-size:1.02rem;color:var(--ink)}
+.included li .ix{font-family:var(--label);font-style:italic;color:var(--green);font-size:.95rem;
+  min-width:2.2ch;text-align:right;flex:none}
+.detail{overflow:hidden;max-height:0;transition:max-height .6s ease,opacity .5s ease;opacity:0}
+.detail.open{max-height:1200px;opacity:1;margin-top:1.2rem}
+.detail-inner{border-top:1px solid var(--hair);padding-top:1.1rem;color:var(--ink)}
+
+/* ---- MEDICINES (dark immersive) ---- */
+.medicines{background:var(--cacao);color:var(--oat)}
+.medicines .eyebrow{color:#C99A4E}
+.medicines h2,.medicines h3{color:#F1E6CE}
+.medicines .lead{color:var(--bloom)}
+.medicines .smallcaps,.medicines .latin{color:var(--bloom)}
+.med-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:1rem}
+.med-card{position:relative;border:1px solid rgba(201,169,139,.32);padding:30px 26px 28px;
+  background:linear-gradient(170deg,rgba(70,64,47,.34),rgba(41,22,2,.2))}
+.med-card::after{content:"";position:absolute;inset:6px;border:1px solid rgba(201,169,139,.16);pointer-events:none}
+.med-card .num{position:absolute;top:14px;right:18px;font-family:var(--label);font-style:italic;
+  color:var(--bloom);font-size:1.05rem}
+.med-plate{height:200px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.med-plate svg{width:100%;height:100%;overflow:visible}
+.med-card h3{font-size:1.85rem;margin:.1em 0 .15em}
+.med-tag{font-family:var(--label);font-style:italic;letter-spacing:.06em;color:#C99A4E;margin-bottom:.8em;font-size:1.02rem}
+.med-card p{font-size:1rem;line-height:1.66;color:var(--oat)}
+.med-card .linkmore{color:#C99A4E;border-color:#C99A4E}
+.med-card .linkmore:hover{color:#F1E6CE;border-color:#F1E6CE}
+.med-card .detail-inner{border-top-color:rgba(201,169,139,.28);color:var(--bloom)}
+.med-foot{margin-top:2.4rem;text-align:center;font-family:var(--label);font-style:italic;
+  letter-spacing:.05em;color:var(--bloom);font-size:1.02rem}
+/* botanical stroke ink */
+.ink{fill:none;stroke:#E6CDA9;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;
+  filter:url(#rough)}
+.ink-fill{fill:#E6CDA9;filter:url(#rough)}
+.ink-thin{fill:none;stroke:#E6CDA9;stroke-width:1.2;stroke-linecap:round;filter:url(#rough)}
+.draw{stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2s ease}
+.revealed .draw{stroke-dashoffset:0}
+@media (prefers-reduced-motion:reduce){.draw{stroke-dashoffset:0!important;transition:none}}
+
+/* ---- VENUE ---- */
+.venue .lead{max-width:44ch}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.4rem 0 2.4rem}
+.chip{font-family:var(--label);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;
+  color:var(--walnut);border:1px solid var(--hair);padding:.5em 1em;border-radius:40px;background:rgba(230,205,169,.3)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+.gal{position:relative;overflow:hidden;cursor:pointer;border:1px solid var(--walnut);
+  padding:8px;background:#fff;box-shadow:4px 5px 0 rgba(201,169,139,.45),0 10px 26px rgba(41,22,2,.1);
+  transition:transform .4s ease}
+.gal img{width:100%;height:100%;object-fit:cover;filter:sepia(.32) saturate(.85) contrast(.96) brightness(.99)}
+.gal::before{content:"";position:absolute;top:-6px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  width:54px;height:18px;background:rgba(157,95,27,.22);z-index:3;box-shadow:0 1px 3px rgba(41,22,2,.15)}
+.gal:hover{transform:translateY(-4px) rotate(-.4deg)}
+.gal:hover img{filter:sepia(.12) saturate(1) contrast(1) brightness(1)}
+.gal:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.gal.big{grid-column:span 2;grid-row:span 2}
+.gal.wide{grid-column:span 2}
+.gal-cap{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);font-family:var(--label);
+  font-style:italic;color:var(--parchment);background:rgba(41,22,2,.55);padding:.2em .8em;
+  font-size:.85rem;letter-spacing:.05em;opacity:0;transition:.3s;white-space:nowrap}
+.gal:hover .gal-cap,.gal:focus-visible .gal-cap{opacity:1}
+
+/* ---- FACILITATORS ---- */
+.facils{background:linear-gradient(180deg,rgba(230,205,169,.3),var(--parchment))}
+.fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.fac-card{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;
+  border:1px solid var(--hair);background:rgba(241,230,206,.6);padding:30px 30px 26px;
+  box-shadow:0 10px 28px rgba(41,22,2,.06)}
+.medallion{width:96px;height:96px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--walnut);position:relative;background:var(--oat)}
+.medallion::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1px dashed var(--hair)}
+.medallion span{font-family:var(--display);font-size:2.6rem;color:var(--green);
+  font-variation-settings:"SOFT" 40,"WONK" 1}
+.fac-card h3{font-size:1.55rem;margin-bottom:.1em}
+.fac-role{font-family:var(--label);font-style:italic;letter-spacing:.04em;color:var(--ochre-text);
+  margin-bottom:.8em;font-size:1.05rem}
+.fac-card p{font-size:1rem}
+
+/* ---- PRICING ---- */
+.pricing{background:linear-gradient(180deg,var(--parchment),rgba(230,205,169,.34))}
+.price-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.price-card{position:relative;border:1px solid var(--walnut);background:var(--oat);padding:44px 40px;
+  box-shadow:8px 10px 0 rgba(201,169,139,.45),0 18px 40px rgba(41,22,2,.1)}
+.price-card::before{content:"";position:absolute;inset:8px;border:1px solid var(--hair);pointer-events:none}
+.price-card .seal{position:absolute;top:-26px;right:30px;width:74px;height:74px;border-radius:50%;
+  background:var(--ochre);color:var(--parchment);display:flex;align-items:center;justify-content:center;
+  text-align:center;font-family:var(--label);font-style:italic;font-size:.78rem;line-height:1.15;
+  letter-spacing:.04em;box-shadow:0 6px 16px rgba(41,22,2,.22);transform:rotate(-8deg)}
+.price-card h3{font-size:1.7rem}
+.price-card .sub{font-family:var(--label);font-style:italic;color:var(--walnut);font-size:1.05rem;margin-bottom:1.1rem}
+.price-amt{font-family:var(--display);font-size:3.6rem;color:var(--green);line-height:1;margin:.3em 0 .1em;
+  font-variation-settings:"SOFT" 50,"WONK" 1}
+.price-scale{font-family:var(--label);font-style:italic;color:var(--walnut);margin-bottom:1.4rem}
+.price-card ul{list-style:none;margin:1.2rem 0 1.6rem;border-top:1px solid var(--hair)}
+.price-card li{padding:.66em 0;border-bottom:1px dotted var(--hair);font-size:1rem;display:flex;gap:.7em}
+.price-card li::before{content:"❧";color:var(--green);flex:none}
+.price-note{font-family:var(--label);font-style:italic;color:var(--ochre-text);margin-top:1rem;font-size:1rem}
+
+/* ---- TESTIMONIALS (dark) ---- */
+.testi{background:var(--cacao);color:var(--oat)}
+.testi .eyebrow{color:#C99A4E}.testi h2{color:#F1E6CE}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.quote{border:1px solid rgba(201,169,139,.3);padding:30px 28px;position:relative;
+  background:linear-gradient(170deg,rgba(70,64,47,.3),rgba(41,22,2,.12))}
+.quote .qmark{font-family:var(--display);font-size:4rem;color:#C99A4E;line-height:.5;
+  display:block;height:.6em;opacity:.8}
+.quote p{font-style:italic;font-size:1.05rem;line-height:1.7;color:var(--oat);margin:.4em 0 1.2rem}
+.quote .who{display:flex;align-items:center;gap:.85em}
+.q-med{width:46px;height:46px;border-radius:50%;border:1px solid rgba(201,169,139,.5);
+  display:flex;align-items:center;justify-content:center;font-family:var(--display);
+  color:#C99A4E;font-size:1.3rem;flex:none}
+.q-name{font-family:var(--label);text-transform:uppercase;letter-spacing:.16em;font-size:.9rem;color:#F1E6CE}
+.q-loc{font-family:var(--label);font-style:italic;color:var(--bloom);font-size:.92rem}
+.testi .detail-inner{border-top-color:rgba(201,169,139,.28);color:var(--bloom)}
+.testi .linkmore{color:#C99A4E;border-color:#C99A4E}
+.testi .linkmore:hover{color:#F1E6CE;border-color:#F1E6CE}
+
+/* ---- BOOK (appendix) ---- */
+.book{background:linear-gradient(180deg,rgba(230,205,169,.34),var(--parchment))}
+.book .section-head{margin:0 auto 3rem;text-align:center;max-width:30ch}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:3rem}
+.step{border:1px solid var(--hair);background:rgba(241,230,206,.6);padding:30px 26px;position:relative}
+.step .sn{font-family:var(--display);font-size:2.6rem;color:var(--green);display:block;
+  font-variation-settings:"SOFT" 40,"WONK" 1;line-height:1;margin-bottom:.3em}
+.step h3{font-size:1.32rem;margin-bottom:.4em}
+.step p{font-size:1rem}
+.book-cta{text-align:center}
+.book-cta .closing{font-family:var(--display);font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--cacao);
+  font-style:italic;margin-bottom:1.4rem;font-variation-settings:"SOFT" 70,"WONK" 1}
+.book-cta .btn{font-size:1.05rem;padding:1.05em 2.2em}
+
+/* ---- FOOTER ---- */
+footer{background:var(--cacao);color:var(--bloom);padding:64px 0 40px;text-align:center}
+footer .brand{color:var(--parchment);justify-content:center;font-size:1.8rem;margin-bottom:1rem}
+footer .brand svg path{stroke:var(--oat)}
+footer .fmeta{font-family:var(--label);font-style:italic;letter-spacing:.04em;color:var(--bloom);margin-bottom:.6rem}
+footer a{color:#C99A4E;text-decoration:none;border-bottom:1px solid rgba(201,154,78,.4)}
+footer .frule{width:60px;height:1px;background:rgba(201,169,139,.4);margin:1.8rem auto}
+
+/* ---- LIGHTBOX ---- */
+.lb{position:fixed;inset:0;z-index:9500;background:rgba(41,22,2,.92);display:none;
+  align-items:center;justify-content:center;padding:30px}
+.lb.open{display:flex}
+.lb-frame{max-width:90vw;max-height:86vh;position:relative;background:#fff;padding:14px;
+  border:1px solid var(--walnut);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lb-frame img{max-width:86vw;max-height:74vh;object-fit:contain;filter:sepia(.18)}
+.lb-cap{font-family:var(--label);font-style:italic;color:var(--ink);text-align:center;margin-top:.6rem;font-size:.95rem}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(241,230,206,.9);
+  border:1px solid var(--walnut);width:46px;height:46px;border-radius:50%;cursor:pointer;
+  font-size:1.4rem;color:var(--cacao);display:flex;align-items:center;justify-content:center}
+.lb-prev{left:-22px}.lb-next{right:-22px}
+.lb-close{position:fixed;top:24px;right:28px;background:none;border:1px solid var(--bloom);
+  color:var(--parchment);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:1.3rem}
+/* keep lightbox arrows on-screen & clear of the close button on phones */
+@media(max-width:560px){
+  .lb{padding:18px}
+  .lb-btn{top:auto;bottom:-58px;transform:none}
+  .lb-prev{left:24px}.lb-next{right:24px}
+}
+
+/* ---- reveal ---- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rv.revealed{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important;transition:none}}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:980px){
+  .hero-grid,.about-spread,.price-grid{grid-template-columns:1fr;gap:40px}
+  .med-grid,.testi-grid,.steps{grid-template-columns:1fr}
+  .fac-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .gal.big{grid-column:span 2;grid-row:span 1}
+}
+@media(max-width:760px){
+  .navlinks{position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:var(--parchment);
+    flex-direction:column;align-items:flex-start;justify-content:center;gap:1.6rem;padding:40px;
+    transform:translateX(100%);transition:.4s ease;box-shadow:-10px 0 40px rgba(41,22,2,.2);z-index:8500}
+  .navlinks.open{transform:none}
+  .burger{display:block;z-index:8600}
+  .hero{padding:130px 0 70px}
+  section{padding:72px 0}
+}
+@media(max-width:480px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  .hero-plate{padding:36px 26px 30px}
+  .gallery{grid-template-columns:1fr;grid-auto-rows:200px}
+  .gal.big,.gal.wide{grid-column:span 1}
+  .fac-card{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .price-card{padding:36px 26px}
+}
+</style>
+</head>
+<body>
+
+<!-- texture & marginalia -->
+<div class="grain" aria-hidden="true"></div>
+<div class="coffee c1" aria-hidden="true"></div>
+<div class="coffee c2" aria-hidden="true"></div>
+
+<!-- shared SVG filters -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="2" seed="7" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>
+  <filter id="roughd"><feTurbulence type="turbulence" baseFrequency="0.028" numOctaves="2" seed="11" result="t"/>
+    <feDisplacementMap in="SourceGraphic" in2="t" scale="3.5" xChannelSelector="R" yChannelSelector="G"/></filter>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="navin">
+    <a href="#top" class="brand" aria-label="Sacred Medicine — home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 4 C20 14 14 18 14 24 a6 6 0 0 0 12 0 C26 18 20 14 20 4Z" stroke="#3A4A30" stroke-width="1.6" stroke-linejoin="round"/><path d="M20 16 v18 M20 22 l-5 -3 M20 26 l5 -3" stroke="#73604D" stroke-width="1.2" stroke-linecap="round"/></svg>
+      Sacred Medicine
+    </a>
+    <nav>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#medicines">Medicines</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#facilitators">Team</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#book" class="btn btn-fill">Reserve</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu-scrim" id="menuScrim" aria-hidden="true"></div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-plate rv">
+        <span class="corner">Pl. I · Field notes</span>
+        <!-- drawn caapi vine threading the margin -->
+        <svg class="vine-margin" viewBox="0 0 60 360" aria-hidden="true">
+          <path class="ink-thin" d="M30 4 C46 40 14 70 30 108 C46 146 14 176 30 214 C46 252 14 282 30 320 C40 342 30 352 30 358"/>
+          <path class="ink-thin" d="M30 40 C40 36 50 40 54 50 M30 80 C20 76 10 80 6 90 M30 140 C40 136 50 140 54 150 M30 200 C20 196 10 200 6 210 M30 260 C40 256 50 260 54 270 M30 300 C20 296 10 300 6 310"/>
+        </svg>
+        <span class="eyebrow">2-Night Sacred Medicine Retreat</span>
+        <h1>Remembering <em>who you are.</em></h1>
+        <p class="meta">August 21–23, 2025 · 1 hour from Geneva, France</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-fill">Reserve your place →</a>
+          <a href="#about" class="btn btn-ghost">Explore the journey</a>
+        </div>
+      </div>
+      <aside class="specimen-card rv">
+        <span class="num">№ 001</span>
+        <span class="smallcaps">The Invitation</span>
+        <h3 style="margin-top:.4rem">A field guide to coming home.</h3>
+        <p class="dropcap" style="margin-top:.8rem">Some doorways are not found on maps. They open inward — into stillness, into the body, into the quiet remembering of who you were before the world told you otherwise. This is a record of one such passage, kept on parchment, held with care.</p>
+        <p class="marg" style="margin-top:1rem;border-top:1px solid var(--hair);padding-top:.9rem">— pressed and inked, for the curious of heart</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about torn-top" id="about">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">The Invitation</span>
+      <h2>A safe, sacred space to come home to.</h2>
+      <p class="lead">Two nights of deep healing, transformation and reconnection — with yourself, with nature, and with the unseen. Gently held, in a small group of no more than six.</p>
+    </div>
+    <div class="about-spread">
+      <div class="about-body rv">
+        <p class="dropcap">This retreat offers a safe and sacred space for deep healing, transformation, and reconnection. Guided by experienced facilitators, you'll be gently supported through every phase of your inner journey, slowing down to listen inward and remember who you truly are.</p>
+        <button class="linkmore" aria-expanded="false" data-target="about-detail">Read more about the retreat →</button>
+        <div class="detail" id="about-detail">
+          <div class="detail-inner">
+            <p>This retreat offers a safe and sacred space for deep healing, transformation, and reconnection — with yourself, with nature, and with the unseen. Guided by experienced facilitators, you'll be gently supported through every phase of your inner journey. Whether you're seeking clarity, release, or a deeper sense of purpose, this retreat invites you to slow down, listen inward, and remember who you truly are. The group is kept intentionally small — no more than six participants — so that everyone receives close, individual support throughout.</p>
+          </div>
+        </div>
+      </div>
+      <aside class="about-aside rv">
+        <span class="smallcaps">What's included</span>
+        <ul class="included">
+          <li><span class="ix">i.</span><span>Small group — max 6 participants</span></li>
+          <li><span class="ix">ii.</span><span>Facilitators &amp; healers with 10+ years</span></li>
+          <li><span class="ix">iii.</span><span>3 guided group ceremonies</span></li>
+          <li><span class="ix">iv.</span><span>Private healing &amp; sharing circles</span></li>
+          <li><span class="ix">v.</span><span>Somatic practices &amp; breathwork</span></li>
+          <li><span class="ix">vi.</span><span>Sound healing journeys</span></li>
+          <li><span class="ix">vii.</span><span>Journaling &amp; shadow work</span></li>
+          <li><span class="ix">viii.</span><span>Post-retreat integration support</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEDICINES ============ -->
+<section class="medicines torn-top" id="medicines">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">The Three Sacred Medicines</span>
+      <h2>Ancient allies, held with care.</h2>
+      <p class="lead">Each medicine is offered in a guided group ceremony, with thorough preparation, support, and integration.</p>
+    </div>
+    <div class="med-grid">
+
+      <!-- RAPÉH — Nicotiana rustica (Mapacho): heart leaves + yellow bell flowers -->
+      <article class="med-card rv">
+        <span class="num">№ I</span>
+        <div class="med-plate">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Botanical engraving of Nicotiana rustica, the Mapacho tobacco plant">
+            <!-- stem -->
+            <path class="ink draw" d="M100 188 C98 150 102 120 100 92 C99 74 101 58 100 40"/>
+            <!-- lower heart leaves -->
+            <path class="ink draw" d="M100 150 C76 152 50 144 40 124 C56 132 72 130 84 138 C70 130 56 118 54 100 C72 116 92 128 100 150Z"/>
+            <path class="ink draw" d="M100 132 C124 134 150 124 160 104 C144 114 128 112 116 120 C130 110 144 100 146 82 C128 98 108 110 100 132Z"/>
+            <path class="ink-thin draw" d="M100 150 C80 144 64 132 56 116 M100 132 C120 124 136 112 144 96"/>
+            <!-- bell flower cluster (4-6 pale-yellow five-lobed bells) -->
+            <g class="draw">
+            <path class="ink" d="M100 40 C92 30 92 18 100 12 C108 18 108 30 100 40Z"/>
+            <path class="ink" d="M100 12 l0 -6 M100 9 l-4 -4 M100 9 l4 -4 M97 8 l-2 -5 M103 8 l2 -5"/>
+            </g>
+            <g class="draw">
+            <path class="ink" d="M84 50 C74 42 72 30 80 23 C90 28 92 42 84 50Z"/>
+            <path class="ink-thin" d="M82 23 l-2 -5 M80 24 l-4 -3 M84 23 l1 -5"/>
+            <path class="ink-thin" d="M84 50 C90 46 96 44 100 46"/>
+            </g>
+            <g class="draw">
+            <path class="ink" d="M116 50 C126 42 128 30 120 23 C110 28 108 42 116 50Z"/>
+            <path class="ink-thin" d="M118 23 l2 -5 M120 24 l4 -3 M116 23 l-1 -5"/>
+            <path class="ink-thin" d="M116 50 C110 46 104 44 100 46"/>
+            </g>
+            <g class="draw">
+            <path class="ink" d="M92 64 C82 58 80 46 88 40 C98 45 100 58 92 64Z"/>
+            <path class="ink-thin" d="M90 40 l-1 -5 M92 40 l3 -4"/>
+            </g>
+            <g class="draw">
+            <path class="ink" d="M108 64 C118 58 120 46 112 40 C102 45 100 58 108 64Z"/>
+            <path class="ink-thin" d="M110 40 l1 -5 M108 40 l-3 -4"/>
+            </g>
+          </svg>
+        </div>
+        <span class="latin">Nicotiana rustica</span>
+        <h3>Rapéh</h3>
+        <p class="med-tag">Amazonian snuff · group ceremony</p>
+        <p>Clears mental and emotional blockages, anchoring deep presence and a grounded connection to the Earth.</p>
+        <button class="linkmore" aria-expanded="false" data-target="med-rapeh">Learn more →</button>
+        <div class="detail" id="med-rapeh"><div class="detail-inner"><p>A sacred shamanic snuff medicine traditionally used by Indigenous tribes of the Amazon for ceremonial, medicinal, and spiritual purposes. The finely ground blend typically contains Nicotiana rustica (Mapacho) along with various ashes, barks, or medicinal plants, depending on the tribe and the intended energetic effect. Administered through the nose, Rapéh acts swiftly on the energetic body, clearing mental and emotional blockages while inducing a state of deep presence and inner stillness. It can help anchor prayers, release stagnant energy, and foster a grounded connection with the Earth and one's own spiritual path.</p></div></div>
+      </article>
+
+      <!-- CHANGA — Banisteriopsis caapi liana braided + Psychotria viridis leaf -->
+      <article class="med-card rv">
+        <span class="num">№ II</span>
+        <div class="med-plate">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Botanical engraving of the Banisteriopsis caapi vine and Psychotria viridis chacruna leaf">
+            <!-- braided caapi liana (twisting rope) -->
+            <path class="ink draw" d="M58 188 C40 156 76 140 58 108 C40 76 76 60 58 28"/>
+            <path class="ink draw" d="M58 188 C76 156 40 140 58 108 C76 76 40 60 58 28"/>
+            <path class="ink-thin draw" d="M48 168 l20 6 M68 138 l-20 6 M48 108 l20 6 M68 78 l-20 6 M48 48 l20 6"/>
+            <!-- opposite pointed glossy leaves on the vine -->
+            <path class="ink draw" d="M58 150 C42 146 30 134 28 120 C42 126 52 136 58 150Z"/>
+            <path class="ink draw" d="M58 96 C74 92 86 80 88 66 C74 72 64 82 58 96Z"/>
+            <!-- chacruna leaf: widest past centre, herringbone veins, domatia dots -->
+            <path class="ink draw" d="M150 184 C118 168 110 132 124 96 C134 70 152 52 168 44 C160 64 156 86 158 108 C160 134 158 162 150 184Z"/>
+            <path class="ink-thin draw" d="M150 184 C152 150 156 110 168 44"/>
+            <g class="ink-thin draw">
+              <path d="M153 170 C144 162 136 156 130 150"/>
+              <path d="M155 152 C146 144 138 138 131 132"/>
+              <path d="M157 132 C148 124 142 118 136 112"/>
+              <path d="M158 112 C152 104 148 98 144 92"/>
+              <path d="M160 92 C156 84 154 78 152 72"/>
+              <path d="M155 162 C162 156 168 150 172 142"/>
+              <path d="M157 142 C164 136 170 130 174 122"/>
+              <path d="M159 122 C166 116 170 110 174 102"/>
+            </g>
+            <g class="ink-fill draw"><circle cx="148" cy="166" r="1.5"/><circle cx="150" cy="146" r="1.5"/><circle cx="153" cy="126" r="1.5"/><circle cx="155" cy="106" r="1.5"/></g>
+          </svg>
+        </div>
+        <span class="latin">Banisteriopsis caapi · Psychotria viridis</span>
+        <h3>Changa</h3>
+        <p class="med-tag">Visionary plant blend · group ceremony</p>
+        <p>A smokable blend of DMT-containing plants and visionary herbs — a shorter, gentler doorway to vivid insight and emotional release.</p>
+        <button class="linkmore" aria-expanded="false" data-target="med-changa">Learn more →</button>
+        <div class="detail" id="med-changa"><div class="detail-inner"><p>Changa is a blend of DMT-containing plants combined with visionary herbs — often including the ayahuasca vine — which soften and gently extend the journey. Smoked in a ceremonial setting, it opens a shorter, more grounded visionary doorway than DMT alone: gentle in its onset, yet capable of remarkable depth. The experience often brings vivid imagery, emotional release, and a felt sense of reconnection — with yourself, with others, and with the living world. Many describe a profound sense of clarity and perspective as mental noise falls away and the heart opens. Held with care and intention, Changa can be a gentle yet powerful ally for insight, healing, and integration — a brief but meaningful glimpse beyond the ordinary mind.</p></div></div>
+      </article>
+
+      <!-- PSILOCYBIN — Psilocybe cubensis cluster: cap, gills, annulus, mycelium -->
+      <article class="med-card rv">
+        <span class="num">№ III</span>
+        <div class="med-plate">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Botanical engraving of Psilocybe cubensis mushrooms with cap, gills and mycelium">
+            <!-- mycelial threads at base -->
+            <path class="ink-thin draw" d="M70 178 C56 182 44 180 34 186 M84 180 C72 188 58 188 46 192 M110 180 C124 184 138 182 150 188 M96 182 C108 190 122 190 134 194"/>
+            <!-- tall mushroom -->
+            <path class="ink draw" d="M84 178 C82 150 84 120 86 100"/>
+            <path class="ink draw" d="M94 178 C96 150 94 120 92 100"/>
+            <path class="ink draw" d="M86 100 C70 98 58 88 60 78 C70 64 110 64 118 78 C120 88 106 98 92 100Z"/>
+            <path class="ink-thin draw" d="M62 80 C78 86 100 86 116 80"/>
+            <g class="ink-thin draw"><path d="M68 82 l-4 -8 M76 84 l-2 -10 M84 85 l-1 -11 M92 85 l1 -11 M100 84 l2 -10 M108 82 l4 -8"/></g>
+            <!-- annulus ring -->
+            <path class="ink-thin draw" d="M83 112 C88 116 92 116 95 112"/>
+            <!-- medium mushroom -->
+            <path class="ink draw" d="M124 178 C123 156 124 134 125 120"/>
+            <path class="ink draw" d="M131 178 C132 156 131 134 130 120"/>
+            <path class="ink draw" d="M125 120 C112 118 104 110 106 102 C114 92 142 92 148 102 C150 110 138 118 130 120Z"/>
+            <path class="ink-thin draw" d="M108 104 C120 108 136 108 146 104"/>
+            <path class="ink-thin draw" d="M124 128 C127 131 130 131 132 128"/>
+            <!-- small button mushroom -->
+            <path class="ink draw" d="M52 178 C51 164 52 150 53 142"/>
+            <path class="ink draw" d="M57 178 C58 164 57 150 56 142"/>
+            <path class="ink draw" d="M53 142 C44 140 40 134 42 128 C48 121 64 121 68 128 C70 134 62 140 56 142Z"/>
+          </svg>
+        </div>
+        <span class="latin">Psilocybe cubensis</span>
+        <h3>Psilocybin</h3>
+        <p class="med-tag">Sacred mushroom · group ceremony</p>
+        <p>Opens the heart and quiets the mind, letting insight, emotion and vision surface for deep integration.</p>
+        <button class="linkmore" aria-expanded="false" data-target="med-psilo">Learn more →</button>
+        <div class="detail" id="med-psilo"><div class="detail-inner"><p>Psilocybin is the sacred compound found in certain mushrooms, used for millennia in healing and spiritual traditions for expanding awareness, and catalyzing deep inner transformation. In ceremonial settings, psilocybin softens mental conditioning, allowing emotions, insights, and visions to surface. It quiets the brain's default mode network, inviting profound connection with self, nature, and the greater whole. When held with care and intention, psilocybin becomes a wise ally for grounding mystical insight, healing old wounds, and reconnecting with purpose and presence.</p></div></div>
+      </article>
+
+    </div>
+    <p class="med-foot">Held by skilled facilitators · medical screening &amp; health disclosure required before booking.</p>
+  </div>
+</section>
+
+<!-- ============ VENUE ============ -->
+<section class="venue torn-top" id="venue">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">The Venue</span>
+      <h2>A lodge built from the earth.</h2>
+      <p class="lead">A 2025-built lodge of natural wood, immersed in nature with sweeping mountain views — warm, earthy, and made to hold you.</p>
+      <div class="chips">
+        <span class="chip">Mountain view</span><span class="chip">Immersed in nature</span>
+        <span class="chip">Natural-wood lodge</span><span class="chip">Private &amp; shared rooms</span>
+      </div>
+    </div>
+    <div class="gallery rv" id="gallery">
+      <button class="gal big" data-i="0"><img src="assets/img1.jpg" alt="Wood and stone alpine lodge exterior under a blue sky"><span class="gal-cap">The lodge — tap to explore</span></button>
+      <button class="gal" data-i="1"><img src="assets/img2.jpg" alt="Great room with stone fireplace, leather sofas and a long wood dining table"><span class="gal-cap">Great room</span></button>
+      <button class="gal" data-i="2"><img src="assets/img3.jpg" alt="Terrace deck with stone wall and sunset mountain view"><span class="gal-cap">Terrace</span></button>
+      <button class="gal wide" data-i="3"><img src="assets/img4.jpg" alt="Living room with fireplace and leather sofas"><span class="gal-cap">Living room</span></button>
+      <button class="gal" data-i="4"><img src="assets/img5.jpg" alt="Loft bedroom under timber rafters with a double bed"><span class="gal-cap">Loft bedroom</span></button>
+      <button class="gal" data-i="5"><img src="assets/img6.jpg" alt="Master bedroom with wood walls and curtained windows"><span class="gal-cap">Master bedroom</span></button>
+      <button class="gal" data-i="6"><img src="assets/img7.jpg" alt="Bunk room with rustic timber bunk beds"><span class="gal-cap">Bunk room</span></button>
+    </div>
+    <div class="rv" style="margin-top:2rem;max-width:60ch">
+      <button class="linkmore" aria-expanded="false" data-target="venue-detail">Explore the space →</button>
+      <div class="detail" id="venue-detail"><div class="detail-inner"><p>Surrounded by forests and mountains, the 2025-built lodge is immersed in nature and built almost entirely from natural materials. Wood features prominently throughout the uniquely designed space, creating a warm, earthy atmosphere that invites you to slow down and feel held. A spacious balcony opens onto sweeping mountain views, with plenty of peaceful corners to rest, reflect, and simply be. Rooms are simple yet cozy and thoughtfully arranged — both private and shared options are available. A place to breathe deeply, recharge, and return to yourself — just one hour from Geneva.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FACILITATORS ============ -->
+<section class="facils torn-top" id="facilitators">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Meet Your Facilitators</span>
+      <h2>Held by experience &amp; deep care.</h2>
+    </div>
+    <div class="fac-grid">
+      <article class="fac-card rv">
+        <div class="medallion"><span>B</span></div>
+        <div>
+          <h3>Bettina Hofer</h3>
+          <p class="fac-role">Therapist &amp; Guide</p>
+          <p>20+ years guiding self-discovery and healing — meditation, presence, and the transformative power of love and compassion.</p>
+          <button class="linkmore" aria-expanded="false" data-target="fac-b" style="margin-top:.6rem">Read full bio →</button>
+          <div class="detail" id="fac-b"><div class="detail-inner"><p>Bettina is a dedicated therapist with over 20 years of experience guiding individuals on their journey toward self-discovery and healing. Her approach focuses on helping clients rediscover and reconnect with their senses, fostering greater awareness and presence. She believes in the transformative power of love and compassion, creating a safe and nurturing environment in every session. In addition to her therapeutic work, she offers meditation practices that promote inner peace, clarity, and a deeper connection to the body. She is deeply connected to the animal world — especially dolphins and horses — and has been organizing retreats with free-roaming dolphins in the Egyptian Red Sea for over a decade.</p></div></div>
+        </div>
+      </article>
+      <article class="fac-card rv">
+        <div class="medallion"><span>T</span></div>
+        <div>
+          <h3>Till van Rooyen</h3>
+          <p class="fac-role">Plant Medicine Facilitator</p>
+          <p>Facilitating since 2019 — 400+ ceremonies across Mexico, the US, Costa Rica, Europe &amp; French Polynesia. Grounding, empathic, safe.</p>
+          <button class="linkmore" aria-expanded="false" data-target="fac-t" style="margin-top:.6rem">Read full bio →</button>
+          <div class="detail" id="fac-t"><div class="detail-inner"><p>Till has been facilitating plant medicine ceremonies since 2019, building on over a decade of personal experience with these practices. His path has included a deep journey into personal development, bodywork, Tantra, shamanism, and spirituality. He has facilitated more than 400 ceremonies around the world — including Mexico, the USA, Costa Rica, Europe, and French Polynesia. He recently returned to Europe after three years in Central America, immersed in various traditions and learning from experienced teachers how to guide entheogenic ceremonies. Recognized for his empathy and loving presence, Till creates a safe space where deep healing and transformation can occur.</p></div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing torn-top" id="pricing">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Investment</span>
+      <h2>One offering, met where you are.</h2>
+    </div>
+    <div class="price-grid">
+      <div class="price-card rv">
+        <div class="seal">By<br>sliding<br>scale</div>
+        <h3>The Retreat</h3>
+        <p class="sub">2 nights · all-inclusive</p>
+        <div class="price-amt">600–700 CHF</div>
+        <p class="price-scale">Pay what feels right within the range.</p>
+        <ul>
+          <li>3 guided group ceremonies — Rapéh, Changa &amp; Psilocybin</li>
+          <li>Accommodation — private or shared room</li>
+          <li>All meals &amp; workshops</li>
+          <li>Post-retreat integration support</li>
+        </ul>
+        <a href="#book" class="btn btn-fill" style="width:100%;justify-content:center">Reserve your place →</a>
+        <p class="price-note">A 250 CHF deposit secures your place.</p>
+      </div>
+      <div class="rv">
+        <span class="smallcaps">Appendix · on value</span>
+        <p class="dropcap" style="margin-top:.8rem">A single, all-inclusive offering for the two-night retreat, priced on a sliding scale. The intention is to keep the work accessible while honouring its true value — you choose the amount that feels right for you.</p>
+        <button class="linkmore" aria-expanded="false" data-target="price-detail">How the sliding scale works →</button>
+        <div class="detail" id="price-detail"><div class="detail-inner"><p>There is a single, all-inclusive offering for the two-night retreat, priced on a sliding scale from 600 to 700 CHF. You choose the amount that feels right for you within that range — an approach intended to keep the work accessible while honouring its true value. Your place includes all three guided group ceremonies (Rapéh, Changa and Psilocybin), accommodation in a private or shared room, all meals and workshops, and post-retreat integration support. A 250 CHF deposit secures your place after registration. It is non-refundable, but can be applied toward future retreats or services.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi torn-top" id="testimonials">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Journeys Shared</span>
+      <h2>Words from those who walked through.</h2>
+    </div>
+    <div class="testi-grid">
+      <figure class="quote rv">
+        <span class="qmark" aria-hidden="true">&ldquo;</span>
+        <p>From the very first contact, Till made me feel completely safe. My body, mind and soul feel aligned.</p>
+        <button class="linkmore" aria-expanded="false" data-target="t-gnatty">Read more →</button>
+        <div class="detail" id="t-gnatty"><div class="detail-inner"><p>"From the very first contact, Till made me feel completely safe. His calm presence, deep experience, and gentle energy helped me surrender to the powerful medicine. Even in the intensity of the peak experience, he held space with quiet strength — grounding me with soft sounds and soothing presence. Through his guidance and integration support, things became clearer. My body, mind, and soul feel aligned. I wholeheartedly recommend Till to anyone seeking a powerful and safe experience, held in care and integrity. You're in good hands. Ahó 🙏"</p></div></div>
+        <figcaption class="who"><span class="q-med">G</span><span><span class="q-name">G-Natty</span><br><span class="q-loc">Tahiti, French Polynesia</span></span></figcaption>
+      </figure>
+      <figure class="quote rv">
+        <span class="qmark" aria-hidden="true">&ldquo;</span>
+        <p>A wonderful experience of rebirth — I felt the joy of being alive and the unconditional love within me.</p>
+        <button class="linkmore" aria-expanded="false" data-target="t-xavier">Read more →</button>
+        <div class="detail" id="t-xavier"><div class="detail-inner"><p>"I wanted to thank you again for this wonderful experience of rebirth. I went through all the traumas of my life to rediscover my true nature. I intensely felt the joy of being alive and the unconditional love within me — I'll never forget this feeling, which from now on will be the reference in my life. This unconditional love allowed me to let go of control, my vigilance, my ego, and to surrender to the divine in me. You've found your life mission and you're perfectly where you belong. I love you, brother. 🙏"</p></div></div>
+        <figcaption class="who"><span class="q-med">X</span><span><span class="q-name">Xavier</span><br><span class="q-loc">Switzerland</span></span></figcaption>
+      </figure>
+      <figure class="quote rv">
+        <span class="qmark" aria-hidden="true">&ldquo;</span>
+        <p>Always attuned to what you need — the least medicine for the greatest effect. Less is indeed more.</p>
+        <figcaption class="who" style="margin-top:1.2rem"><span class="q-med">M</span><span><span class="q-name">Min</span><br><span class="q-loc">Singapore</span></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK ============ -->
+<section class="book torn-top" id="book">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">How to Book</span>
+      <h2>A doorway awaits. Step through.</h2>
+    </div>
+    <div class="steps">
+      <article class="step rv"><span class="sn">01</span><h3>Reach out</h3><p>Spaces are limited to six — contact us to reserve your place.</p></article>
+      <article class="step rv"><span class="sn">02</span><h3>Secure your spot</h3><p>A 250 CHF deposit confirms your place — non-refundable, but transferable to future retreats.</p></article>
+      <article class="step rv"><span class="sn">03</span><h3>Prepare safely</h3><p>Share any medications &amp; health conditions with us before booking.</p></article>
+    </div>
+    <div class="book-cta rv">
+      <p class="closing">Are you ready to step through?</p>
+      <a href="mailto:hofer967@hotmail.com" class="btn btn-fill">Begin your journey →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <span class="brand" style="display:inline-flex">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 4 C20 14 14 18 14 24 a6 6 0 0 0 12 0 C26 18 20 14 20 4Z" stroke="#E6CDA9" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      Sacred Medicine
+    </span>
+    <div class="frule" aria-hidden="true"></div>
+    <p class="fmeta">2-Night Sacred Medicine Retreat · August 21–23, 2025 · 1 hour from Geneva, France</p>
+    <p class="fmeta"><a href="mailto:hofer967@hotmail.com">hofer967@hotmail.com</a></p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close viewer">✕</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <div class="lb-frame">
+    <img id="lbImg" src="" alt="">
+    <p class="lb-cap" id="lbCap"></p>
+  </div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">›</button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- nav solidify + mobile menu ---- */
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('solid', window.scrollY > 40); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var burger = document.getElementById('burger');
+  var navlinks = document.getElementById('navlinks');
+  var scrim = document.getElementById('menuScrim');
+  var mainEl = document.getElementById('top');
+  var navAnchors = navlinks.querySelectorAll('a');
+  var firstLink = navAnchors[0], lastLink = navAnchors[navAnchors.length-1];
+  var toggleMenu = function(open){
+    navlinks.classList.toggle('open', open);
+    scrim.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true':'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    /* hide the page behind the open menu from AT + tab order */
+    if(mainEl){
+      if(open){ mainEl.setAttribute('aria-hidden','true'); mainEl.setAttribute('inert',''); }
+      else { mainEl.removeAttribute('aria-hidden'); mainEl.removeAttribute('inert'); }
+    }
+    if(open && firstLink){ firstLink.focus(); }
+  };
+  burger.addEventListener('click', function(){ toggleMenu(!navlinks.classList.contains('open')); });
+  scrim.addEventListener('click', function(){ toggleMenu(false); burger.focus(); });
+  navlinks.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ toggleMenu(false); }); });
+  /* Escape closes the menu & returns focus; simple focus trap between burger and last link */
+  navlinks.addEventListener('keydown', function(e){
+    if(!navlinks.classList.contains('open')) return;
+    if(e.key === 'Escape'){ toggleMenu(false); burger.focus(); return; }
+    if(e.key === 'Tab'){
+      if(e.shiftKey && document.activeElement === firstLink){ e.preventDefault(); burger.focus(); }
+      else if(!e.shiftKey && document.activeElement === lastLink){ e.preventDefault(); burger.focus(); }
+    }
+  });
+  burger.addEventListener('keydown', function(e){
+    if(!navlinks.classList.contains('open')) return;
+    if(e.key === 'Escape'){ toggleMenu(false); burger.focus(); }
+    else if(e.key === 'Tab' && !e.shiftKey){ e.preventDefault(); if(firstLink) firstLink.focus(); }
+    else if(e.key === 'Tab' && e.shiftKey){ e.preventDefault(); if(lastLink) lastLink.focus(); }
+  });
+
+  /* ---- read-more expanders ---- */
+  document.querySelectorAll('.linkmore').forEach(function(btn){
+    /* store both labels up front so we never string-replace at runtime */
+    var orig = btn.textContent.trim();
+    btn.dataset.orig = orig;
+    /* generic "Read more →" keeps the "Read less ↑" pairing; everything else collapses to "Show less ↑" */
+    btn.dataset.less = (orig.indexOf('Read more') === 0 && orig.indexOf('about') === -1)
+      ? 'Read less ↑' : 'Show less ↑';
+    btn.addEventListener('click', function(){
+      var panel = document.getElementById(btn.getAttribute('data-target'));
+      var open = panel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true':'false');
+      btn.textContent = open ? btn.dataset.less : btn.dataset.orig;
+    });
+  });
+
+  /* ---- scroll reveal + ink draw ---- */
+  if('IntersectionObserver' in window && !rm){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.14, rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv, .med-card').forEach(function(el){ io.observe(el); });
+    /* stagger the ink draws within each plate */
+    document.querySelectorAll('.med-card').forEach(function(card){
+      var paths = card.querySelectorAll('.draw');
+      paths.forEach(function(p,i){ p.style.transitionDelay = (0.12*i)+'s'; });
+    });
+  } else {
+    document.querySelectorAll('.rv, .med-card').forEach(function(el){ el.classList.add('revealed'); });
+    /* belt-and-suspenders: no observer means '.revealed .draw' may never fire on old engines,
+       so flatten the stroke-dashoffset directly to keep the engravings visible */
+    document.querySelectorAll('.draw').forEach(function(p){ p.style.strokeDashoffset = '0'; });
+  }
+
+  /* ---- lightbox ---- */
+  var imgs = [
+    ['assets/img1.jpg','The lodge exterior — wood and stone'],
+    ['assets/img2.jpg','Great room — fireplace, sofas, long table'],
+    ['assets/img3.jpg','Terrace — sunset mountain view'],
+    ['assets/img4.jpg','Living room — fireplace and leather sofas'],
+    ['assets/img5.jpg','Loft bedroom under timber rafters'],
+    ['assets/img6.jpg','Master bedroom — natural wood walls'],
+    ['assets/img7.jpg','Bunk room — rustic timber beds']
+  ];
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap'), cur=0, lastFocus=null;
+  var show=function(i){ cur=(i+imgs.length)%imgs.length; lbImg.src=imgs[cur][0];
+    lbImg.alt=imgs[cur][1]; lbCap.textContent=imgs[cur][1]; };
+  var open=function(i){ lastFocus=document.activeElement; show(i); lb.classList.add('open');
+    document.body.style.overflow='hidden'; document.getElementById('lbClose').focus(); };
+  var close=function(){ lb.classList.remove('open'); document.body.style.overflow='';
+    if(lastFocus) lastFocus.focus(); };
+  document.querySelectorAll('.gal').forEach(function(g){
+    g.addEventListener('click', function(){ open(parseInt(g.getAttribute('data-i'),10)); });
+  });
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', function(){ show(cur-1); });
+  document.getElementById('lbNext').addEventListener('click', function(){ show(cur+1); });
+  lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    else if(e.key==='ArrowLeft') show(cur-1);
+    else if(e.key==='ArrowRight') show(cur+1);
+  });
+})();
+</script>
+</body>
+</html>
